@@ -1,61 +1,4 @@
 on_actions = {
-	# During justifying wargoals
-	# triggered daily, so make sure there is a sink somewhere not firing events
-	# country, FROM = target nation
-	on_justifying_wargoal_pulse = {
-		random_events = {
-
-		}
-	}
-
-	on_wargoal_expire = {
-		effect = {
-
-		}
-	}
-
-	# country random events
-	#on_bi_yearly_pulse = {
-	#
-	#}
-
-	#on_five_year_pulse = {
-	#
-	#}
-
-	on_border_war_lost = {
-		effect = {
-
-		}
-	}
-
-	on_leave_faction = {
-		effect = {
-
-		}
-	}
-
-	#FROM is the one that joins the faction
-	on_create_faction = {
-		effect = {
-
-		}
-	}
-
-	#FROM is country getting invited.
-	on_offer_join_faction = {
-		effect = {
-
-		}
-	}
-
-	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
-	on_join_faction = {
-		effect = {
-
-		}
-	}
-
 	#FROM is war target
 	on_declare_war = {
 		effect = {
@@ -82,52 +25,8 @@ on_actions = {
 		}
 	}
 
-	# When a new faction is formed
-	on_faction_formed = {
-		effect = {
-
-		}
-	}
-
-	# ROOT is capitulated country, FROM is winner
-	on_capitulation  = {
-	}
-
-	# ROOT is previously capitulated country
-	on_uncapitulation = {
-		effect = {
-
-		}
-	}
-
-	on_government_change = {
-		effect = {
-
-		}
-	}
-
-	on_coup_succeeded = {
-		effect = {
-
-		}
-	}
-
-	#ROOT is winner #FROM gets annexed - This will also fire on_annex
-	on_civil_war_end = {
-		effect = {
-		}
-	}
-
-	#used when puppeting in a peace conference
-	#ROOT = nation being puppeted, FROM = overlord
-
-	on_puppet = {
-
-	}
-
 	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
 	#ROOT = nation being released, FROM = overlord
-
 	on_release_as_puppet = {
 		effect = {
 			if = {
@@ -141,12 +40,6 @@ on_actions = {
 					annex_country = { target = PREV }
 				}
 			}
-		}
-	}
-
-	on_subject_annexed = {
-		effect = {
-
 		}
 	}
 
@@ -185,7 +78,6 @@ on_actions = {
 		}
 	}
 
-
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
@@ -198,11 +90,13 @@ on_actions = {
 				}
 				country_event = { id = enc.6 }
 			}
-		}
-	}
-
-	on_unit_leader_created = {
-		effect = {
+			ERB = {
+				country_lock_all_division_template = yes
+				country_event = {
+					id = nf_eureka.13
+					days = 21
+				}
+			}
 		}
 	}
 
@@ -238,40 +132,6 @@ on_actions = {
 					}
 				}
 			}
-		}
-	}
-
-	on_unit_leader_level_up = {
-		effect = {
-
-		}
-	}
-
-	# From is owner country
-	on_army_leader_daily = {
-		effect = {
-
-		}
-	}
-
-	# From is owner country
-	on_army_leader_won_combat = {
-		effect = {
-
-		}
-	}
-
-	# From is owner country
-	on_army_leader_lost_combat = {
-		effect = {
-
-		}
-	}
-
-
-	on_army_leader_promoted = {
-		effect = {
-
 		}
 	}
 }

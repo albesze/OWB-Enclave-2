@@ -2,7 +2,7 @@
 
 set_war_support = 0.20
 set_stability = 0.35
-# oob = "ERB_2275"
+oob = "ERB_2275"
 ###############################
 # TECHNOLOGY
 ###############################
@@ -248,9 +248,9 @@ recruit_character = ERB_Douglas_Granite
 # 	add_opinion_modifier = { target = ERB modifier = genocidal_maniacs }
 # 	ERB = { add_opinion_modifier = { target = PREV modifier = dirty_muties }}
 # }
-# 
-# # IDEAS
-# add_ideas = {
+
+# IDEAS
+add_ideas = {
 # 	ENC_infighting
 # 	enc_scientists
 # 	ENC_officers
@@ -266,9 +266,9 @@ recruit_character = ERB_Douglas_Granite
 # 	enc_press_none
 # 	training_law_navarro_veterans
 # #	no_wages
-# 	eur_mercenary_army
-# }
-# 
+	eur_mercenary_army
+}
+
 # add_manpower = 500
 # 
 # # 4th of july

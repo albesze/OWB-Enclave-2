@@ -13,7 +13,6 @@ focus_tree = {
 ###############################################################
 	focus = {
 		id = enc_prologue_1
-		# icon = GFX_goal_enc_verti
 		ai_will_do = { factor = 1 }
 		x = 20
 		y = 0
@@ -23,28 +22,163 @@ focus_tree = {
 	}
 	focus = {
 		id = enc_prologue_2
-		# icon = GFX_goal_enc_election
 		ai_will_do = { factor = 1 }
 		relative_position_id = enc_prologue_1
 		x = 0
 		y = 1
 		prerequisite = { focus=enc_prologue_1 }
 		cost = 7
-		available_if_capitulated = yes
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = enc_prologue_3
-		# icon = GFX_goal_enc_president
 		ai_will_do = { factor = 1 }
 		relative_position_id = enc_prologue_2
 		x = 0
 		y = 1
 		prerequisite = { focus = enc_prologue_2}
 		cost = 7
-#		available = {
-#		}
+		completion_reward = {
+		}
+	}
+
+###############################################################
+# STAGE 1
+###############################################################
+
+	focus = {
+		id = enc_deal_with_van_graffs
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_prologue_3
+		x = -1
+		y = 1
+		prerequisite = { focus = enc_prologue_3}
+		cost = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_uneasy_neighborhoods
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_prologue_3
+		x = 1
+		y = 1
+		prerequisite = { focus = enc_prologue_3}
+		cost = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_refurbish_and_repair
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_prologue_3
+		x = -3
+		y = 1
+		prerequisite = { focus = enc_prologue_3}
+		cost = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_that_damn_vertibird
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_prologue_3
+		x = 3
+		y = 1
+		prerequisite = { focus = enc_prologue_3}
+		cost = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_offmap_mils
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_deal_with_van_graffs
+		x = 0
+		y = 1
+		prerequisite = { focus = enc_deal_with_van_graffs}
+		cost = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_lost_sons
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_uneasy_neighborhoods
+		x = 0
+		y = 1
+		prerequisite = { focus = enc_uneasy_neighborhoods}
+		cost = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_navarro_or_nothing
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_prologue_3
+		x = 0
+		y = 4
+		cost = 7
+		available = {
+			#TODO: only if Navarro civil war is happening
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_war_focus_1
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_navarro_or_nothing
+		x = -3
+		y = 1
+		prerequisite = { focus = enc_navarro_or_nothing}
+		cost = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_war_focus_2
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_navarro_or_nothing
+		x = 0
+		y = 1
+		prerequisite = { focus = enc_navarro_or_nothing}
+		cost = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_war_focus_3
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_navarro_or_nothing
+		x = 3
+		y = 1
+		prerequisite = { focus = enc_navarro_or_nothing}
+		cost = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = enc_victory_at_navarro
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_prologue_3
+		x = 0
+		y = 3
+		cost = 7
+		available = {
+			#TODO: win at Navarro
+		}
 		completion_reward = {
 		}
 	}
