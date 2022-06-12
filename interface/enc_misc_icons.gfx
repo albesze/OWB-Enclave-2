@@ -1,0 +1,387 @@
+spriteTypes = {
+		spriteType = { #GFX_idea_enc_designer_verti
+			name = "GFX_idea_enc_designer_verti"
+			texturefile = "gfx/interface/ideas/idea_enc_designer_verti.dds"
+		}
+		spriteType = { #GFX_idea_enc_designer_fighter
+			name = "GFX_idea_enc_designer_fighter"
+			texturefile = "gfx/interface/ideas/idea_enc_designer_fighter.dds"
+		}
+        SpriteType = {#enc_designer_PA
+            name = "GFX_idea_enc_designer_PA"
+ 		    texturefile = "gfx/interface/ideas/idea_enc_designer_PA.dds"
+ 	    }
+        SpriteType = {#enc_designer_plasma
+            name = "GFX_idea_enc_designer_plasma"
+ 		    texturefile = "gfx/interface/ideas/idea_enc_designer_plasma.dds"
+ 	    }
+        SpriteType = {#enc_designer_tesla
+            name = "GFX_idea_enc_designer_tesla"
+ 		    texturefile = "gfx/interface/ideas/idea_enc_designer_tesla.dds"
+ 	    }
+        SpriteType = {#enc_designer_PA_2
+            name = "GFX_idea_enc_designer_PA_2"
+ 		    texturefile = "gfx/interface/ideas/idea_enc_designer_PA_2.dds"
+ 	    }
+        SpriteType = {#enc_designer_verti
+            name = "GFX_idea_enc_chemical_corps"
+ 		    texturefile = "gfx/interface/ideas/idea_enc_chemical_corps.dds"
+ 	    }
+        SpriteType = {#idea_enc_atomic_commision
+            name = "GFX_idea_enc_atomic_commision"
+ 		    texturefile = "gfx/interface/ideas/idea_enc_atomic_commision.dds"
+ 	    }
+        SpriteType = {#idea_enc_designer_misc
+            name = "GFX_idea_enc_designer_misc"
+ 		    texturefile = "gfx/interface/ideas/idea_enc_designer_misc.dds"
+ 	    }
+		SpriteType = {#sargeant_dornan
+            name = "GFX_idea_sargeant_dornan"
+ 		    texturefile = "gfx/interface/ideas/sargeant_dornan.dds"
+ 	    }
+		SpriteType = {#clayton_schultz
+            name = "GFX_idea_clayton_schultz"
+ 		    texturefile = "gfx/interface/ideas/clayton_schultz.dds"
+ 	    }
+		SpriteType = {#d_henry
+            name = "GFX_idea_d_henry"
+ 		    texturefile = "gfx/interface/ideas/d_henry.dds"
+ 	    }
+		SpriteType = {#arcade_gannon
+            name = "GFX_idea_arcade_gannon"
+ 		    texturefile = "gfx/interface/ideas/arcade_gannon.dds"
+ 	    }
+		SpriteType = {#boris_t
+            name = "GFX_idea_boris_t"
+ 		    texturefile = "gfx/interface/ideas/boris_t.dds"
+ 	    }
+		SpriteType = {#enc_hayes
+            name = "GFX_idea_enc_hayes"
+ 		    texturefile = "gfx/interface/ideas/enc_hayes.dds"
+ 	    }
+		SpriteType = {#enc_salvatore
+            name = "GFX_idea_enc_salvatore"
+ 		    texturefile = "gfx/interface/ideas/enc_salvatore.dds"
+ 	    }
+		SpriteType = {#enc_wright
+            name = "GFX_idea_enc_wright"
+ 		    texturefile = "gfx/interface/ideas/enc_wright.dds"
+ 	    }
+		SpriteType = {#orion_moreno
+            name = "GFX_idea_orion_moreno_erb"
+ 		    texturefile = "gfx/interface/ideas/orion_moreno.dds"
+ 	    }
+		SpriteType = {#daisy_whitman
+            name = "GFX_idea_daisy_whitman"
+ 		    texturefile = "gfx/interface/ideas/daisy_whitman.dds"
+ 	    }
+		spriteType = {
+			name = "GFX_icons_power"
+			texturefile = "gfx/interface/icons/power_icon.dds"
+		}
+		spriteType = {
+			name = "GFX_icons_powered"
+			texturefile = "gfx/interface/icons/powered_icon.dds"
+		}
+		spriteType = {
+			name = "GFX_icons_police"
+			texturefile = "gfx/interface/icons/police_icon.dds"
+		}
+		spriteType = {
+			name = "GFX_decision_enc_helmet"
+			texturefile = "gfx/interface/icons/decision_enc_helmet.dds"
+		}
+		spriteType = {
+			name = "GFX_decision_enc_eyebot"
+			texturefile = "gfx/interface/icons/decision_enc_eyebot.dds"
+		}
+		spriteType = {
+			name = "GFX_decision_enc_helmet_color"
+			texturefile = "gfx/interface/icons/decision_enc_helmet_color.dds"
+		}
+		spriteType = {
+			name = "GFX_decision_enc_bear_head"
+			texturefile = "gfx/interface/icons/decision_enc_bear_head.dds"
+		}
+		spriteType = {
+			name = "GFX_decision_enc_hayes"
+			texturefile = "gfx/interface/icons/decision_enc_hayes.dds"
+		}
+		spriteType = {
+			name = "GFX_decision_enc_lynette"
+			texturefile = "gfx/interface/icons/decision_enc_lynette.dds"
+		}
+		spriteType = {
+			name = "GFX_decision_enc_bear_head_alert"
+			texturefile = "gfx/interface/icons/decision_enc_bear_head_alert.dds"
+		}
+		spriteType = {
+			name = "GFX_decision_enc_verti"
+			texturefile = "gfx/interface/icons/decision_enc_verti.dds"
+		}
+		spriteType = {
+			name = "category_enc_political_infighting"
+			texturefile = "gfx/interface/icons/decision_category_enc_political_infighting.dds"
+		}
+		spriteType = {
+			name = "category_enc_stopwatch"
+			texturefile = "gfx/interface/icons/decision_category_enc_stopwatch.dds"
+		}
+		spriteType = {
+			name = "decision_enc_skull"
+			texturefile = "gfx/interface/icons/decision_enc_skull.dds"
+		}
+		spriteType = {
+			name = "decision_enc_resources"
+			texturefile = "gfx/interface/icons/decision_enc_resources.dds"
+		}
+		spriteType = {
+			name = "decision_enc_propaganda"
+			texturefile = "gfx/interface/icons/decision_enc_propaganda.dds"
+		}
+		spriteType = {
+			name = "GFX_enc_weapons_green"
+			texturefile = "gfx/interface/enc_weapons_green_icon.dds"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "GFX_enc_weapons_red"
+			texturefile = "gfx/interface/enc_weapons_red_icon.dds"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "GFX_enc_weapons"
+			texturefile = "gfx/interface/enc_weapons_icon.dds"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "category_enc_espionage"
+			texturefile = "gfx/interface/decision_category_enc_espionage.dds"
+		}
+		spriteType = {
+			name = "decision_enc_espionage"
+			texturefile = "gfx/interface/icons/decision_enc_espionage.dds"
+		}
+		spriteType = {
+			name = "decision_enc_agreement"
+			texturefile = "gfx/interface/icons/decision_enc_agreement.dds"
+		}
+		spriteType = {
+			name = "decision_enc_cloning"
+			texturefile = "gfx/interface/icons/decision_enc_cloning.dds"
+		}
+		spriteType = {
+			name = "category_enc_new_reno"
+			texturefile = "gfx/interface/icons/decision_category_enc_new_reno.dds"
+		}
+		spriteType = {
+			name = "decision_enc_officer"
+			texturefile = "gfx/interface/icons/decision_enc_officer.dds"
+		}
+		spriteType = {
+			name = "decision_enc_research_up"
+			texturefile = "gfx/interface/icons/decision_enc_research_up.dds"
+		}
+		spriteType = {
+			name = "decision_enc_production_up"
+			texturefile = "gfx/interface/icons/decision_enc_production_up.dds"
+		}
+		spriteType = {
+			name = "decision_enc_construction_up"
+			texturefile = "gfx/interface/icons/decision_enc_construction_up.dds"
+		}
+		spriteType = {
+			name = "decision_enc_research_down"
+			texturefile = "gfx/interface/icons/decision_enc_research_down.dds"
+		}
+		spriteType = {
+			name = "decision_enc_production_down"
+			texturefile = "gfx/interface/icons/decision_enc_production_down.dds"
+		}
+		spriteType = {
+			name = "decision_enc_construction_down"
+			texturefile = "gfx/interface/icons/decision_enc_construction_down.dds"
+		}
+		spriteType = {
+			name = "decision_enc_admin_up"
+			texturefile = "gfx/interface/icons/decision_enc_admin_up.dds"
+		}
+		spriteType = {
+			name = "decision_enc_admin_down"
+			texturefile = "gfx/interface/icons/decision_enc_admin_down.dds"
+		}
+		spriteType = {
+			name = "decision_enc_rations_up"
+			texturefile = "gfx/interface/icons/decision_enc_rations_up.dds"
+		}
+		spriteType = {
+			name = "decision_enc_rations_down"
+			texturefile = "gfx/interface/icons/decision_enc_rations_down.dds"
+		}
+		spriteType = {
+			name = "category_enc_cloning"
+			texturefile = "gfx/interface/icons/decision_category_enc_cloning.dds"
+		}
+		spriteType = {
+			name = "category_enc_rangers"
+			texturefile = "gfx/interface/icons/decision_category_enc_rangers.dds"
+		}
+		spriteType = {
+			name = "category_enc_shift"
+			texturefile = "gfx/interface/icons/decision_category_enc_shift.dds"
+		}
+		spriteType = {
+			name = "category_enc_anti_ncr"
+			texturefile = "gfx/interface/icons/decision_category_enc_anti_ncr.dds"
+		}
+		spriteType = {
+			name = "decision_enc_bishop"
+			texturefile = "gfx/interface/icons/decision_enc_bishop.dds"
+		}
+		spriteType = {
+			name = "decision_demote_scientists"
+			texturefile = "gfx/interface/icons/decision_demote_scientists.dds"
+		}
+		spriteType = {
+			name = "decision_demote_officers_boot"
+			texturefile = "gfx/interface/icons/decision_demote_officers_boot.dds"
+		}
+		spriteType = {
+			name = "decision_demote_officers"
+			texturefile = "gfx/interface/icons/decision_demote_officers.dds"
+		}
+		spriteType = {
+			name = "enc_legitimacy_icon"
+			texturefile = "gfx/interface/icons/legitimacy.dds"
+			legacy_lazy_load = no
+		}
+		spriteType = {
+			name = "decision_usa_flag"
+			texturefile = "gfx/interface/icons/decision_usa_flag.dds"
+		}
+		spriteType = {
+			name = "category_usa_flag"
+			texturefile = "gfx/interface/icons/category_usa_flag.dds"
+		}
+		spriteType = {
+			name = "category_deseret"
+			texturefile = "gfx/interface/icons/category_deseret.dds"
+		}
+		spriteType = {
+			name = "category_seattle"
+			texturefile = "gfx/interface/icons/category_seattle.dds"
+		}
+		spriteType = {
+			name = "category_tv"
+			texturefile = "gfx/interface/icons/category_tv.dds"
+		}
+		spriteType = {
+			name = "decision_vault_boy"
+			texturefile = "gfx/interface/icons/decision_vault_boy.dds"
+		}
+		spriteType = {
+			name = "decision_enc_movie"
+			texturefile = "gfx/interface/icons/decision_enc_movie.dds"
+		}
+	spriteType = {
+			name = "decision_usa_construction"
+			texturefile = "gfx/interface/icons/decision_usa_construction.dds"
+		}
+	spriteType = {
+			name = "category_usa_construction"
+			texturefile = "gfx/interface/icons/category_usa_construction.dds"
+		}
+	spriteType = {
+			name = "decision_nuka_cola"
+			texturefile = "gfx/interface/icons/decision_nuka_cola.dds"
+		}
+		spriteType = {
+			name = "decision_water_pump"
+			texturefile = "gfx/interface/icons/decision_water_pump.dds"
+		}
+		spriteType = {
+			name = "decision_ncr_flag"
+			texturefile = "gfx/interface/icons/decision_ncr_flag.dds"
+		}
+		spriteType = {
+			name = "decision_fate_bos"
+			texturefile = "gfx/interface/icons/decision_fate_bos.dds"
+		}
+		spriteType = {
+			name = "decision_stimpak"
+			texturefile = "gfx/interface/icons/decision_stimpak.dds"
+		}
+		spriteType = {
+			name = "decision_plasma"
+			texturefile = "gfx/interface/icons/decision_plasma.dds"
+		}
+		spriteType = {
+			name = "decision_power"
+			texturefile = "gfx/interface/icons/decision_power.dds"
+		}
+		spriteType = {
+			name = "gfx_decision_nuke_flagstaff"
+			texturefile = "gfx/interface/icons/decision_nuke_flagstaff.dds"
+		}
+		spriteType = {
+			name = "GFX_trait_enc_purist"
+			texturefile = "gfx/interface/traits/trait_enc_purist.dds"
+		}
+		spriteType = {
+			name = "GFX_trait_enc_reformer"
+			texturefile = "gfx/interface/traits/trait_enc_reformer.dds"
+		}
+		spriteType = {
+			name = "GFX_trait_enc_demoted"
+			texturefile = "gfx/interface/traits/trait_enc_demoted.dds"
+		}
+		spriteType = {
+			name = "GFX_decision_category_USM_decision"
+			texturefile = "gfx/interface/icons/USM_decision.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_enc_big_jim_chief_of_army"
+			texturefile = "gfx/interface/ideas/bigjim_chief.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_enc_drummond_chief_of_army"
+			texturefile = "gfx/interface/ideas/drummond_chief.dds"
+		}
+		frameAnimatedSpriteType = {
+			name = "GFX_logo_backboard_animated"
+			texturefile = "gfx/interface/logo_backboard_animated.dds"
+			noOfFrames = 45
+			animation_rate_fps = 15
+			looping = yes
+			play_on_show = yes
+		}
+		spriteType = {
+			name = "GFX_enclave_button"
+			texturefile = "gfx/interface/icons/enclave_button.dds"
+		}
+		spriteType = {
+			name = "GFX_arm_patriots_ready"
+			texturefile = "gfx/interface/icons/arm_patriots_ready.dds"
+		}
+
+		################################
+		# IDEOLOGY
+		################################
+		spriteType = {
+			name = "GFX_ideology_ERB_people_group"
+			texturefile = "gfx/interface/ideologies/ERB_people.dds"
+		}
+		spriteType = {
+			name = "GFX_ideology_ERB_intellectuals_group"
+			texturefile = "gfx/interface/ideologies/ERB_intellectuals.dds"
+		}
+		spriteType = {
+			name = "GFX_ideology_ERB_elites_group"
+			texturefile = "gfx/interface/ideologies/ERB_elites.dds"
+		}
+		spriteType = {
+			name = "GFX_ideology_ERB_ruler_group"
+			texturefile = "gfx/interface/ideologies/ERB_ruler.dds"
+		}
+	}
+}

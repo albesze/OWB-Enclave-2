@@ -1,0 +1,7 @@
+PATCH 2.1.1
+- Changed location of "establish outpost" button
+- redesigned "establish icon" button
+- loc fixes
+- trade laws bug fixed
+- arm patriot button redone
+- arm slaves button redone

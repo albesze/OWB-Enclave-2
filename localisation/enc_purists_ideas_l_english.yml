@@ -1,0 +1,172 @@
+﻿l_english:
+
+############################################ IDEAS #####################################################################################
+ENC_purist:0 "Purist"
+ENC_purist_desc:0 "Even after all these setbacks, our vision for the return of the true humanity has not wavered. We will purify the mutants from this world and reclaim our beloved homeland. At any cost."
+ENC_purist2:0 "Purist"
+ENC_purist2_desc:0 "Even after all these setbacks, our vision for the return of the true humanity has not wavered. We will purify the mutants from this world and reclaim our beloved homeland. At any cost."
+ENC_purist3:0 "Purist"
+ENC_purist3_desc:0 "Even after all these setbacks, our vision for the return of the true humanity has not wavered. We will purify the mutants from this world and reclaim our beloved homeland. At any cost."
+
+ENC_slave_labour:0 "Slave Labour"
+ENC_slave_labour_collars:0 "Collared Slave Labour"
+ENC_slave_labour_mutants:0 "Super Mutant Slave Labour"
+
+ENC_reform:0 "Reformist"
+ENC_reform_desc:0 "The Enclave has elected Douglas Granite, who means to reform the Enclave from the top down. A transformation which is proving painful."
+
+ENC_scientists:0 "Enclave Scientists"
+ENC_scientists_desc:0 "Enclave scientists are among the most educated and well funded in the post-war world. Many have not forgotten about the defeat at Navarro and are eager to pick up where the Enclave left off."
+
+ENC_special_forces:0 "Power Armour Expertise"
+ENC_special_forces_desc:0 "Unlike much of the Wasteland, the Enclave can afford to equip significant number of power armor divisions.  However, it can only do so if its army is a small elite force. Should that ever change..."
+
+ENC_scientists_purged:0 "Enclave Scientists"
+ENC_scientists_purged_desc:0 "Enclave scientists are among the most educated and well funded in the post-war world."
+
+ENC_scientists_buffed:0 "Enclave Scientists"
+ENC_scientists_buffed_desc:0 "Enclave scientists are among the most educated and well funded in the post-war world. Many have not forgotten about the defeat at Navarro and are eager to pick up where the Enclave left off."
+
+ENC_plague:0 "FEV Plague"
+ENC_plague_desc:0 "The Enclave has unleashed a bio weapon of unseen proportion on our population. Our only hope is to take the antidote from them by force!"
+
+ENC_plague_2:0 "FEV Plague"
+ENC_plague_2_desc:0 "The Enclave has unleashed a bio weapon of unseen proportion on our population. Our only hope is to take the antidote from them by force!"
+
+ENC_plague_3:0 "FEV Plague"
+ENC_plague_3_desc:0 "The Enclave has unleashed a bio weapon of unseen proportion on our population. Our only hope is to take the antidote from them by force!"
+
+
+ENC_infighting:0 "Political Infighting"
+ENC_infighting_desc:0 "Polarization between the two major factions in the Enclave government has come to a boiling point."
+
+ENC_education:0 "Basic Education"
+ENC_education_desc:0 "The Enclave has made education mandatory from 6 years old to 12 years old. Home education is not allowed."
+
+ENC_radio:0 "Enclave Radio"
+ENC_radio_desc:0 "The Enclave is back, America! And no, not just on your radio! These fine men and women have one mission: the restoration of American peace and order."
+
+ENC_wastelanders:0 "Reformist"
+ENC_wastelanders_desc:0 "The Enclave has elected to accept wastelanders volunteers into their armed forces. Expanding their pool of manpower but causing friction in the Enclave government and military."
+ENC_wastelanders2:0 "Reformist"
+ENC_wastelanders2_desc:0 "The Enclave has succesfully integrated wastelander soldiers into their armed forces. Though the integration is limited to the lower rungs of the military."
+
+ENC_officers:0 "Enclave Officers"
+ENC_officers_desc:0 "The few Enclave Officers that remain are both well trained and experienced leaders. Many of them have plenty of comrades to avenge.\n"
+
+ENC_officers_purged:0 "Enclave Officers"
+ENC_officers_purged_desc:0 "The few Enclave Officers that remain are both well trained and experienced leaders."
+
+enc_sac_city:0 "Old Promises"
+ERB_resistance_to_santa_anna: "Resistance to Santa Anna"
+ENC_promote_mexican_guerillas: "Fund the Guerillas"
+
+ENC_enc_new_patriotismriotism:0 "New Patriotism"
+ENC_americans_one_and_all:0 "New Patriotism"
+ENC_police:0 "Federal Police"
+ENC_PA_production:0 "Power Armor production"
+ENC_energy_production: "Plasma Weapon Production"
+ENC_constitution:0 "Constitution"
+ENC_constitution_rule_of_law:0 "Constitution"
+ENC_cloning:0 "Cloning"
+ENC_FEV_soldiers:0 "FEV Enhanced soldiers"
+ENC_secret_service:0 "US Secret Service"
+ENC_secret_service_desc:0 "The United States Secret Service is a federal law enforcement agency under the U.S. Department of Homeland Security, charged with conducting criminal investigations and protecting the nation's leaders."
+
+ENC_integrating_officers:0 "Integrating the Officers"
+ENC_integrating_scientists:0 "Integrating the Scientists"
+ENC_integrating_politicians:0 "Integrating the Politicians"
+
+ENC_radio_purity: "Enclave Radio"
+ENC_vengeance: "Vengeance!"
+
+ENC_PA_quanitity: "Quantity PA Team"
+ENC_PA_quality: "Quality PA Team"
+
+enclave_naval_manufacturer: "Naval Research Team"
+
+contactthehardliners_tt: "3 divisions of §YEnclave Veterans§! appear at the §YSierra Army Depot§!"
+enc_purist_special_forces_cap: "Enclave Efficiency"
+enc_purist_special_forces_cap_desc: "The foolish Reformers think America's future is in the hands of mutants. We think it's in the hand of our boys in black."
+enc_boost_special_forces_tt: "\nBoosts your power armor cap.\n"
+
+enc_idea_lawless_wasteland: "Lawless Wasteland"
+enc_idea_lawless_wasteland_desc: "This region has collapsed into lawless wasteland."
+
+## Leader
+paladin_myers1:0 "Paladin Myers"
+paladin_myers1_name:0 "Paladin Myers"
+
+# traits
+
+enc_purist: "Purist"
+enc_purist_desc: "§gThis commander is loyal to Anderson.§!"
+enc_reformer: "Reformer"
+enc_reformer_desc: "§gThis commander is loyal to Granite.§!"
+enc_demoted: "Demoted"
+enc_demoted_desc: "A demotion saps this commander's motivation. Undoing it will be difficult."
+
+
+ENC_idea_eaz:0 "Enclave Administration Zone"
+enclave_governer_name:0 "Enclave Governer"
+enclave_governer_desc:0 "The Enclave has set up a governer to oversee this region."
+
+
+# GOV
+officer_law_enclave_officers: "Veteran Officers"
+training_law_navarro_veterans: "Navarro Veterans"
+training_law_navarro_veterans_desc: "By appointing respected veterans that survived the fall of Navarro as instructors, we can use their experience to train a new generation of soldiers. Bare in mind that they will pass on their views as well as their skills.\n"
+training_law_enclave_academy: "Enclave Academy"
+training_law_enclave_academy_desc: "A specialized department will ensure that a new generation of Enclave soldiers will be the finest in the wastes."
+enc_training_law_none: "No Formal Training"
+enc_training_law_none_desc: "We can leave the training of new recruits to their respective divisions, but such a lack of standards will not do well for organization or morale."
+enc_training_law_reformer_indoctrination: "Political Indoctrination"
+enc_training_law_reformer_indoctrination_desc: "An Enclave soldier must be trained in more than warfare. We will ensure that the men we field understand our goals and aspirations, or get filtered out before they are handed a plasma rifle."
+
+enc_reorganized_economy: "Reorganized Engineers"
+
+enc_disorganized_economy: "Disorganized Engineers"
+enc_disorganized_economy_desc: "Having only recently rallied around the same flag, the engineers of the Enclave lack a definitive command structure. This hinders their efforts considerably.\n"
+collapsed_trade: "Collapsed Trade"
+
+enc_press_reformer_propaganda: "Reformer Propaganda"
+enc_press_purist_propaganda: "Purist Propaganda"
+enc_press_seggregationist_propaganda: "Segregationist Propaganda"
+
+enc_mutant_law_none: "No Mutants Allowed"
+enc_mutant_law_none_desc: "The wasteland is pockmarked with the presence of those shaped and changed by radiation or other foul, militant sciences. For the purposes of our army, they must be considered unsafe and degenerate, and be denied service without exception. To do otherwise would be to put our whole army at risk.\n"
+
+enc_mutant_law_ghoul: "Ghouls Allowed"
+enc_mutant_law_ghoul_desc: "While many ghouls are feral creatures, there are those that are no less sentient than the rest of us. Considering their long lifespan, we should not ignore the possibility that some ghouls grew up and lived before the great war! Their extensive experience and expertise could benefit our nation greatly.\n"
+
+enc_mutant_law_both: "All Mutants Allowed"
+enc_mutant_law_both_desc: "While we have already declared ghouls American citizens, the step to accept their gargantuan cousins will be even more of a challenge. Still, their formiddable strength can certainly be used in the rebuilding of America.\n"
+
+officer_law_loyal_enclave_officers: "Loyal Officers"
+robotic_army_purist: "The Steel Backbone"
+robotic_army_purist_desc: "Eyebots, Assaultrons, and more back the Enclave's army. Better a robot than the mutant scum."
+
+
+####################################################
+##### Occupation Localization
+####################################################
+enc_no_garrison_occupation: "No Occupation"
+enc_no_exploit_resources: "Exploit Resources"
+enc_enslave_locals: "Enslave Locals"
+enc_wastelander_pacification: "Wastelander Pacification"
+enc_dismantle_industry: "Dismantle Industry"
+enc_dismantle_industry_tt: "Use the §YSalvage Industry§! decisions to move industry from a province with this policy to your capital."
+occupation_law_enc_dismantle_industry: "Has occupation policy §YDismantle Industry§!"
+
+# Purist compliance
+enc_compliance_purist_25: "Slavery"
+enc_compliance_purist_50: "Significant Slavery"
+enc_compliance_purist_75: "Mass Slavery"
+enc_compliance_purist_100: "Slave State"
+
+enc_compliance_reform_20: "Whispers of Hope"
+enc_compliance_reform_35: "Local Militias"
+enc_compliance_reform_50: "Return to normalcy"
+enc_compliance_reform_65: "Patriotism"
+
+enc_resistance_0: "Mutant Presence"

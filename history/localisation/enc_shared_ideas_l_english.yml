@@ -1,0 +1,42 @@
+﻿l_english:
+
+# GOV
+officer_law_enclave_officers: "Enclave Officers"
+training_law_navarro_veterans: "Navarro Veterans"
+training_law_enclave_academy: "Enclave Academy"
+
+enc_reorganized_economy: "Reorganized Engineers"
+
+enc_disorganized_economy: "Disorganized Engineers"
+enc_disorganized_economy_desc: "Having only recently rallied around the same flag, the engineers of the Enclave lack a definitive command structure. This hinders their efforts considerably.""
+collapsed_trade: "Collapsed Trade"
+
+hidden_economy: "Hidden Economy"
+hidden_economy_desc: "The Enclave does not trade with outside factions, as that could compromise their secrecy.\n"
+
+enc_press_reformer_propaganda: "Reformer Propaganda"
+enc_outsider_law_none: "Enclave Members Only"
+enc_outsider_law_volunteers: "Outsider Volunteers"
+has_idea_enc_outsider_law_volunteers: "Has accepted §YOutsider Volunteers§!"
+
+enc_outsider_law_purist_bos: "Brotherhood Volunteers"
+enc_outsider_law_purist_bos_desc: "We have determined that the members of the Brotherhood measure in the 99.99th percentile of unmutated human DNA compared to other outsiders. We could carefully consider accepting those that are like-minded to us and pass careful genetic screening."
+enc_outsider_law_purist_vlt: "Vault City Scientists"
+
+enc_outsider_law_purist_vlt_and_bos: "Accept Both"
+
+currencynocurrency: "No Currency"
+currencycollapsedcurrency: "Worthless Currency"
+worthless_wages: "Worthless Wages"
+no_wages: "Motivated by Vengeance"
+
+#youtubers
+# Francis Jesse Augustine I
+# Xenophon
+# Pravus 
+# Shedcape
+# TheWoodstock
+# Doonhamer
+# MrJeager
+enc_BrenRadNeo: "Bren Radneo"
+enc_BrenRadNeo_name: "Bren Radneo"

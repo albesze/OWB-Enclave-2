@@ -1,0 +1,441 @@
+guiTypes = {
+	containerWindowType = { # connect_to_power
+		name = connect_to_power_container
+		position = {x=90 y=85}
+
+		buttonType = {
+			name = connect_to_power
+			spriteType = GFX_icons_power
+			pdx_tooltip = connect_to_power_tt
+			pdx_tooltip_delayed = connect_to_power_tt_delayed
+			scale = 1
+		}
+	}
+	containerWindowType = 	{ # connect_to_power
+		name = connected_to_power_container
+		position = {x=90 y=85}
+		buttonType = {
+			name = connected_to_power
+			spriteType = GFX_icons_powered
+			pdx_tooltip = connected_to_power_tt
+			pdx_tooltip_delayed = connected_to_power_tt_delayed
+			scale = 1
+		}
+	}
+	containerWindowType = { # install_police_force
+		name = install_police_force_container
+		position = { x = 94 y = 85 }
+
+		buttonType = {
+			name = install_police_force
+			spriteType = GFX_icons_police
+			pdx_tooltip = install_police_force
+			pdx_tooltip_delayed = install_police_force_tt_delayed
+			scale = 1
+		}
+	}
+	containerWindowType = { # arm_rebels
+		name = arm_rebels_container
+		position = {x=90 y=58}
+
+		buttonType = {
+			name = arm_rebels
+			spriteType = GFX_resistance_icon
+			pdx_tooltip = arm_rebels_tt
+			pdx_tooltip_delayed = arm_rebels_tt_delayed
+			scale = 1.2
+		}
+	}
+	containerWindowType = { # arm_slaves
+		name = arm_slaves_container
+		position = {x = 100 y = 85}
+		buttonType = {
+			name = arm_slaves
+			spriteType = GFX_state_resistance 
+			pdx_tooltip = arm_slaves_tt
+			pdx_tooltip_delayed = arm_slaves_tt_delayed
+			scale = 1.2
+		}
+	}
+	containerWindowType = { # arm_slaves_ready
+		name = arm_slaves_ready_container
+		position = {x = 100 y = 88}
+		iconType = {
+			name = arm_slaves
+			spriteType = GFX_arm_patriots_ready
+			pdx_tooltip = arm_slaves_ready_tt
+			pdx_tooltip_delayed = arm_slaves_ready_tt_delayed
+			scale = 1.2
+		}
+	}
+	containerWindowType = { # arm_patriots
+		name = arm_patriots_container
+		position = {x = 100 y = 88}
+		buttonType = {
+			name = arm_patriots
+			spriteType = GFX_state_resistance 
+			pdx_tooltip = arm_patriots_tt
+			pdx_tooltip_delayed = arm_patriots_tt_delayed
+			scale = 1.2
+		}
+	}
+	containerWindowType = { # arm_patriots_ready
+		name = arm_patriots_ready_container
+		position = {x = 100 y = 88}
+		iconType = {
+			name = arm_patriots_ready
+			spriteType = GFX_arm_patriots_ready
+			pdx_tooltip = arm_patriots_ready_tt
+			pdx_tooltip_delayed = arm_patriots_ready_tt_delayed
+			scale = 1.2
+		}
+	}
+	containerWindowType = { # legitimacy
+		name = "legitimacy_container"
+		position = { x = 1072 y = 4 }
+		buttonType ={
+			name ="legitimacy_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+k"
+		}
+		iconType = {
+			name ="legitimacy_icon"
+			spriteType = "enc_legitimacy_icon"
+			position = { x = 4 y = -1 }
+			scale = 0.8
+		}
+		instantTextBoxType = {
+			name ="legitimacy_text"
+			position = { x = 22 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?enc_legitimacy|%0]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "legitimacy_TOOLTIP"
+			pdx_tooltip_delayed = "legitimacy_TOOLTIP_DELAYED"
+		}
+	}
+	containerWindowType = { # legitimacy_2
+		name = "legitimacy_2_container"
+		position = { x = 1180 y = 4 }
+		buttonType ={
+			name ="legitimacy_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+k"
+		}
+		iconType = {
+			name ="legitimacy_2_icon"
+			spriteType = "enc_legitimacy_icon"
+			position = { x = 4 y = -1 }
+			scale = 0.8
+		}
+		instantTextBoxType = {
+			name ="legitimacy_2_text"
+			position = { x = 22 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?enc_legitimacy|%0]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "legitimacy_TOOLTIP"
+			pdx_tooltip_delayed = "legitimacy_TOOLTIP_DELAYED"
+		}
+	}
+	
+	# powergrid
+	containerWindowType = {
+		name = "erb_screen_power_grid_scripted_gui"
+		position = { x = 480 y = 250 }
+		fade_time = 300
+		fade_type = linear
+		buttonType = {
+		name = "erb_power_grid_window"
+			spriteType = "GFX_icons_power"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "army_corps_of_engineers_tt"
+			pdx_tooltip_delayed = "army_corps_of_engineers_tt_delayed"
+			scale = 0.95
+		}
+	}
+	containerWindowType = { # power grid non-functional
+		name = "power_grid_screen_container"
+		position = { x = 600 y = 400 }
+		size = { width = 800 height = 210 }
+		moveable = yes
+		containerWindowType = {
+			name = "entry_window"
+			position = { x = 10 y = 10 }
+			size = { width = 100%% height = 100%% }
+			margin = { left = 10 right = 0 top = 5 bottom = 5 }
+			verticalScrollbar = "right_vertical_sliderno_bg"
+
+			background = {
+				name = "background"
+				spriteType = "GFX_mini_tooltip"
+			}
+			gridboxtype = {
+				name = "erb_screen_power_grid_scripted_gui_gridbox"
+				position = { x = 0 y = 60 }
+				size = { width = 100% height = 100%% }
+				slotsize = { width = 100 height = 40 }
+				add_horizontal = yes
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
+			}
+		}
+		containerWindowType = {
+			name = "header_entry_army_corps_of_engineers"
+			size = { width = 200 height = 30 }
+			clipping = no
+
+			background = {
+				name = "background"
+				spriteType = "GFX_tiled_window_transparent"
+				clicksound = click_default
+			}
+			instantTextboxType = {
+				name = "title"
+				position = { x = 170 y = 14 }
+				font = "hoi_36header"
+				text = "The Army Corps of Engineers"
+				maxWidth = 600
+				maxHeight = 200
+				fixedsize = yes
+			}
+		}
+	}
+	containerWindowType = { # power grid non-functional
+		name = "erb_power_grid_screen_scripted_gui_entry"
+		position = { x = 0 y = 5 }
+		size = { width = 100 height = 30 }
+		buttonType = {
+			name = "entry_bg_button1"
+			spriteType = "GFX_tiled_header_1"
+			position = { x = 0 y = 0 }
+			size = { x = 514 y = 30 }
+			pdx_tooltip = "FALLOUT_GO_TO_STATE_TT"
+		}
+		instantTextboxType = {
+			name = "connect_to_power_grid"
+			position = { x = 10 y = 6 }
+			text = "Civilize [This.GetName]"
+			font = "hoi_18mbs"
+			format = left
+			maxWidth = 250
+			multiline = no
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "connect_to_power_grid1"
+			spriteType = "GFX_tiling_sort_button_2frames"
+			frame = 1
+			buttonFont = "hoi_16mbs"
+			buttonText = "electric_grid_core_button"
+			position = { x = 250 y = 3 }
+			size = { x = 75 y = 25 }
+			pdx_tooltip = "connect_to_power_tt"
+			pdx_tooltip_delayed = "connect_to_power_engineering_tt"
+		}
+	}
+
+	# Resource Harvesting for Purists
+	containerWindowType = { # harvest_resources
+		name = harvest_resources_container
+		position = { x = 65 y = 285 }
+		buttonType = {
+			name = harvest_resources
+			spriteType = GFX_topbar_trade_button
+			pdx_tooltip = harvest_resources_tt
+			pdx_tooltip_delayed = harvest_resources_tt_delayed
+			scale = 0.9
+		}
+	}
+
+	containerWindowType = { # harvest_resources_recall
+		name = harvest_resources_recall_container
+		position = { x = 50 y = 285 }
+		buttonType = {
+			name = harvest_resources_recall
+			spriteType = GFX_cancel_import_button
+			pdx_tooltip = harvest_resources_recall_tt
+			pdx_tooltip_delayed = harvest_resources_recall_tt_delayed
+			scale = 1.2
+		}
+	}
+	containerWindowType = { #robotic_garrison_master
+		name = robotic_garrison_master_container
+		position = { x = 320 y = 515 }			
+		size = { width = 100 height = 100 }
+		iconType = {
+			name = robotic_garrison_icon_bg
+			position = { x = -30 y = -3 }	
+			spriteType = GFX_building_entry_stateview
+			scale = 1
+		}
+		iconType = {
+			name = robotic_garrison_icon
+			position = { x = -17 y = 0 }	
+			spriteType = GFX_decision_enc_eyebot
+			pdx_tooltip = robotic_garrison_icon_tt
+			pdx_tooltip_delayed = robotic_garrison_icon_tt_delayed
+			
+			scale = 1
+		}
+		buttonType = {
+			position = { x = 35 y = 10 }	
+			name = robotic_garrison_decrease
+			spriteType = GFX_subtract_one
+			pdx_tooltip = robotic_garrison_decrease_tt
+			pdx_tooltip_delayed = robotic_garrison_decrease_tt_delayed
+			scale = 1
+		}
+		buttonType = {
+			position = { x = 75 y = 10 }	 
+			name = robotic_garrison
+			spriteType = GFX_add_one
+			pdx_tooltip = robotic_garrison_tt
+			pdx_tooltip_delayed = robotic_garrison_tt_delayed
+			scale = 1 
+		}	
+		instantTextBoxType = {
+			name = robotic_garrison_text_box
+			position = { x = 45 y = 12 }
+			font = "hoi_18mbs"
+			text = "[?state_robots]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = robotic_garrison_text_box2   
+			position = { x = -18 y = 13  }
+			font = "vic_18"
+			text = "[?state_robots_amount|%0]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+	} 
+	
+	containerWindowType = { # establish_outpost
+		name = establish_outpost_container
+		position = { x = 110 y = 90  }
+		buttonType = {
+			name = establish_outpost
+			spriteType = GFX_enclave_button
+			pdx_tooltip = establish_outpost_tt
+			pdx_tooltip_delayed = establish_outpost_tt_delayed
+		}
+	}
+	containerWindowType = { # abandon_outpost
+		position = { x = 120   y = 25 }
+		buttonType = {
+			name = abandon_outpost
+			spriteType = GFX_closebutton
+			pdx_tooltip = abandon_outpost_tt
+			pdx_tooltip_delayed = abandon_outpost_tt_delayed
+			scale = 0.9
+		}
+	}
+	containerWindowType = { # steal_military_industry
+		name = steal_military_industry_container
+		position = { x = 40 y = 365 }
+		buttonType = {
+			name = steal_military_industry
+			spriteType = GFX_military_factory_icon
+			pdx_tooltip = steal_military_industry_tt
+			pdx_tooltip_delayed = steal_military_industry_tt_delayed
+			scale = 1.2
+		}
+	}
+	containerWindowType = { # steal_civilian_industry
+		name = steal_civilian_industry_container
+		position = { x = 90 y = 365 }
+		buttonType = {
+			name = steal_civilian_industry
+			spriteType = GFX_non_available_factory_icon
+			pdx_tooltip = steal_civilian_industry_tt
+			pdx_tooltip_delayed = steal_civilian_industry_tt_delayed
+			scale = 1.2
+		}
+	}
+	containerWindowType = { # add_slaves
+		name = add_slaves_container
+		position = { x = 300  y = 495 }
+		buttonType = {
+			name = add_slaves
+			spriteType = GFX_add_10
+			pdx_tooltip = add_slaves_tt
+			pdx_tooltip_delayed = add_slaves_tt_delayed
+			scale = 1.2
+		}
+
+		instantTextBoxType = {
+			name ="test_text"
+			position = { x = 35 y = 6 }
+			font = "hoi_18mbs"
+			text = "hello!"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "test"
+			pdx_tooltip_delayed = "test_delayed"
+		}
+	}
+	containerWindowType = { # LLW_state_container
+		name = LLW_state_container
+		position = { x = -115 y = -218 }
+		scale = 0.91
+
+		containerWindowType = { # background
+			name = "entry_window"
+			position = { x = -10 y = -170 }
+
+			background = {
+				name = "background"
+				spriteType = "GFX_pol_goal_popup_bg"
+				scale = 1
+			}
+		}
+		containerWindowType = { # title
+			name = "header_entry_LLW_state_container"
+			size = { width = 200 height = 30 }
+			clipping = no
+			instantTextboxType = { # title
+				name = "title"
+				position = { x = 95 y = -148  }
+				font = "hoi_36header"
+				text = "Resource Outpost"
+				maxWidth = 600
+				maxHeight = 200
+				fixedsize = yes
+			}
+		}
+		containerWindowType = { # title
+			name = "manpower_window"
+			size = { width = 200 height = 30 }
+			clipping = no
+			scale = 0.80
+			instantTextboxType = { # title
+				name = "manpower"
+				position = { x = -310 y = -115 }
+				font = "hoi_36header"
+				text = LLW_state_container_info
+				maxWidth = 600
+				maxHeight = 200
+			}
+		}
+	}
+}

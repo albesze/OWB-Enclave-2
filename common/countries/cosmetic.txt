@@ -8,8 +8,8 @@ ERB_enclave = {
 }
 
 ERB = {
-	color = rgb { 0 45 106 }
-	color_ui = rgb { 0 45 106 }
+	color = rgb { 60 0 104}
+	color_ui = rgb { 60 0 104 }
 }
 
 ERB_reconstruction = {

@@ -1,0 +1,77 @@
+﻿division_template = {
+	name = "Enclave Auxiliaries"
+	template_counter= 73
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		demolitions_support = { x = 0 y = 0 }
+		medical_chem_company = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "Rapid Response Division"
+	template_counter= 90
+	regiments = {
+		power_armour = { x = 0 y = 0 }
+		power_armour = { x = 0 y = 1 }
+		power_armour = { x = 0 y = 2 }
+		power_armour = { x = 1 y = 0 }
+		power_armour = { x = 1 y = 1 }
+		power_armour = { x = 1 y = 2 }
+		power_armour = { x = 2 y = 0 }
+		power_armour = { x = 2 y = 1 }
+		power_armour = { x = 2 y = 2 }
+	}
+	support = {
+		demolitions_support = { x = 0 y = 0 }
+		medical_chem_company = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Enclave Remnants"
+		location = 2065
+		division_template = "Rapid Response Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+            plasma_equipment_1 = { owner = "USA" }
+            enclave_power_armour_equipment_1 = { owner = "USA" }
+            explosive_demolitions_equipment_4 = { owner = "USA" }
+        }
+	}
+	division = {
+		name = "Enclave Remnants"
+		location = 2065
+		division_template = "Rapid Response Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+		force_equipment_variants = {
+            plasma_equipment_1 = { owner = "USA" }
+            enclave_power_armour_equipment_1 = { owner = "USA" }
+            explosive_demolitions_equipment_4 = { owner = "USA" }
+        }
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ballistic_equipment_1
+			creator = "EUR"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

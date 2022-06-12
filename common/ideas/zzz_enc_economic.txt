@@ -1,0 +1,524 @@
+ideas = {
+	economy = {
+		law = yes
+		enc_collapsed_economy = {
+			picture = great_depression
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.40
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				generate_wargoal_tension = 1.00
+			}
+
+			allowed_to_remove = {
+				has_stability > 0.30
+				has_completed_focus = enc_federal_reserve
+			}
+			cancel_if_invalid = no
+		}
+		enc_disorganized_economy = {
+			picture = enc_idea_economy_disorganized
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.25
+				conversion_cost_civ_to_mil_factor = 0.25
+				conversion_cost_mil_to_civ_factor = 0.25
+			}
+
+			allowed_to_remove = {
+				# always = no
+			}
+			cancel_if_invalid = no
+		}
+		enc_reorganized_economy = {
+			picture = enc_reorganized_economy
+			allowed = {
+				original_tag = ERB
+			}
+			available = {
+				has_completed_focus = enc_mobilize_economy
+			}
+			visible = {
+				NOT = { has_completed_focus = enc_reform }
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_arms_factory_factor = 0.2
+				conversion_cost_civ_to_mil_factor= -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		enc_civilian_economy = {
+			allowed = {
+				original_tag = ERB
+			}
+			visible = {
+				has_completed_focus = enc_reform
+			}
+			picture = enc_civilian_economy
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				conversion_cost_civ_to_mil_factor= 0.3
+				conversion_cost_mil_to_civ_factor = 0.3
+				max_fuel_factor = -0.25
+				fuel_gain_factor = -0.4
+			}
+
+			default = yes
+
+			cancel_if_invalid = no
+		}
+		enc_low_economic_mobilisation = {
+			picture = enc_low_economic_mobilisation
+			allowed = {
+				original_tag = ERB
+			}
+			visible = {
+				has_completed_focus = enc_reform
+			}
+
+			available = {
+				has_war_support > 0.15
+			}
+			on_add = {
+
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				fuel_gain_factor = -0.25
+			}
+
+			cancel_if_invalid = no
+		}
+		enc_partial_economic_mobilisation = {
+			picture = enc_partial_economic_mobilisation
+			allowed = {
+				original_tag = ERB
+			}
+			visible = {
+				has_completed_focus = enc_reform
+			}
+
+			available = {
+				has_war_support > 0.25
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				fuel_gain_factor = -0.1
+			}
+
+			cancel_if_invalid = no
+			on_add = {
+			}
+		}
+		enc_war_economy = {
+			picture = enc_war_economy
+			allowed = {
+				original_tag = ERB
+			}
+			visible = {
+				has_completed_focus = enc_reform
+			}
+
+
+			available = {
+				has_war_support > 0.5
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				conversion_cost_civ_to_mil_factor= -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+			}
+
+			cancel_if_invalid = no
+			on_add = {
+			}
+		}
+		enc_tot_economic_mobilisation = {
+			picture = enc_tot_economic_mobilisation
+			allowed = {
+				original_tag = ERB
+			}
+			visible = {
+				has_completed_focus = enc_reform
+			}
+			available = {
+				has_war = yes
+				has_war_support > 0.8
+				any_enemy_country = {
+					ic_ratio = {
+						tag = ROOT
+						ratio > 0.5
+					}
+				}
+			}
+			on_add = {
+			}
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				conscription = -0.03
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+			}
+
+			cancel_if_invalid = no
+		}
+
+	}
+	trade_laws = {
+		law = yes
+
+		collapsed_trade = {
+			# picture = ROM_king_carol_emptied_accounts
+			picture = generic_neutrality_drift_bonus
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			on_add = {
+				custom_effect_tooltip = closed_economy_TT
+			}
+			modifier = {
+				min_export = 0
+				local_resources_factor = -0.90
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
+			}
+			allowed_to_remove = {
+				has_stability > 0.30
+				has_completed_focus = enc_department_of_commerce
+			}
+
+			cancel_if_invalid = no
+		}
+		hidden_economy = {
+			picture = generic_spy_coup
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			on_add = {
+				custom_effect_tooltip = closed_economy_TT
+			}
+			modifier = {
+				min_export = 0
+				enemy_justify_war_goal_time = 1
+				trade_opinion_factor = -1
+			}
+			allowed_to_remove = {
+				OR = {
+					NOT = { has_country_flag = ncr_suspicious }
+					NOT = { country_exists = NCR }
+				}
+			}
+
+			cancel_if_invalid = no
+		}
+
+		enc_free_trade = {
+			visible = {
+				has_completed_focus = enc_reform
+				OR = {
+					NOT = { has_country_flag = ncr_suspicious }
+					NOT = { country_exists = NCR }
+				}
+			}
+			available = {
+				always = yes
+			}
+			cost = 150
+			removal_cost = -1
+			modifier = {
+				min_export = 0.5
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.1
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 40.0
+				army_intel_to_others = 20.0
+				caps_country_trade_modifier = 0.30
+			}
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_war = no
+					check_variable = {
+						resource@metal > 5
+					}
+					check_variable = {
+						resource@circuitry > 5
+					}
+					check_variable = {
+						resource@energy > 5
+					}
+					check_variable = {
+						resource@advanced > 5
+					}
+					add = 100
+				}
+			}
+		}
+		enc_export_focus = {
+			visible = {
+				has_completed_focus = enc_reform
+				OR = {
+					NOT = { has_country_flag = ncr_suspicious }
+					NOT = { country_exists = NCR }
+				}
+			}
+			available = {
+				always = yes
+			}
+			cost = 150
+			removal_cost = -1
+			modifier = {
+				min_export = 0.35
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+				civilian_intel_to_others = 20.0
+				navy_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				caps_country_trade_modifier = 0.20
+			}
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_war = no
+					check_variable = {
+						resource@metal > 1
+					}
+					check_variable = {
+						resource@circuitry > 1
+					}
+					add = 999
+				}
+			}
+		}
+		enc_limited_exports = {
+			visible = {
+				has_completed_focus = enc_reform
+				OR = {
+					NOT = { has_country_flag = ncr_suspicious }
+					NOT = { country_exists = NCR }
+				}			
+			}
+			available = {
+				OR = {
+					AND = {
+						has_war = yes
+						any_enemy_country = {
+							ic_ratio = {
+								tag = ROOT
+								ratio > 0.2
+							}
+						}
+					}
+				}
+				use_generic_trade_laws = yes
+			}
+			default = yes
+			cost = 150
+			removal_cost = -1
+			modifier = {
+				min_export = 0.25
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.01
+				civilian_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				army_intel_to_others = 5.0
+				caps_country_trade_modifier = 0.10
+			}
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					is_major = no
+					is_in_faction = yes
+					has_war = yes
+					add = 98
+				}
+			}
+		}
+		enc_closed_economy = {
+			visible = {
+				has_completed_focus = enc_reform
+				OR = {
+					NOT = { has_country_flag = ncr_suspicious }
+					NOT = { country_exists = NCR }
+				}	
+			}
+			available = {
+				has_war = yes
+				OR = {
+					has_idea = enc_war_economy
+					has_idea = enc_tot_economic_mobilisation
+				}
+				OR = {
+					NOT = {
+						tag = NCR
+					}
+				}
+			}
+			allowed_to_remove = {
+				if = {
+					limit = {
+						original_tag = TNK
+					}
+					always = no
+				}
+			}
+			cost = 150
+			removal_cost = -1
+			modifier = {
+				min_export = 0
+			}
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 0
+					is_major = no
+					is_in_faction = yes
+					has_war = yes
+				}
+			}
+		}
+
+
+	}
+	hidden_ideas = {
+		currencynocurrency = {
+			picture = no_currency
+			cost = 150
+			removal_cost = -1
+			available = {
+			}
+			modifier = {
+				caps_flat_income_modifier = 10
+				caps_income_modifier = 0
+				caps_expense_modifier = -1
+			}
+			cancel_if_invalid = no
+		}
+		currencycollapsedcurrency = {
+			picture = no_currency
+			cost = 150
+			removal_cost = -1
+			available = {
+			}
+			modifier = {
+				caps_flat_income_modifier = 0
+				caps_income_modifier = 0
+				caps_expense_modifier = 1
+			}
+			cancel_if_invalid = no
+		}
+		currency_enc_usd = {
+			picture = gov_idea_USD
+			cost = 150
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				caps_flat_income_modifier = 20 # Money Printer Go Brrr 
+				caps_income_modifier = 0.25
+				caps_expense_modifier = 0.20
+			}
+			cancel_if_invalid = no
+		}
+	}
+	army_wages_laws = {
+		law = yes
+		worthless_wages = {
+			picture = mothballed_divisions_icon
+			allowed = {
+				always = no
+			}
+			level = 0
+			removal_cost = -1
+			cost = 20
+			modifier = {
+				caps_expense_modifier = 0
+				army_attack_factor = -0.225
+				army_org_factor = -0.585
+				army_morale_factor = -0.405
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+		no_wages = {
+			picture = motivated
+			allowed = {
+				always = no
+			}
+			level = 0
+			removal_cost = -1
+			cost = 20
+			modifier = {
+				consumer_goods_factor = 0.05
+				caps_expense_modifier = 0
+				max_training = 0.10
+				conscription_factor = 0.05
+				experience_gain_army_factor = 0.15
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

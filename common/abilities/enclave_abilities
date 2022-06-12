@@ -1,0 +1,119 @@
+    ability = {
+        archimedes_strike = {
+            name = ABILITY_ARCHIMEDES_STRIKE
+            desc = ABILITY_ARCHIMEDES_STRIKE_DESC
+
+            sound_effect = command_power_ability_offensive
+
+            type = army_leader
+
+            allowed = {
+                is_leading_army_group = no
+                is_border_war = no
+               	OWNER = {
+                       has_completed_focus = enc_purity
+                       check_variable = { hercules < 5 }
+                }
+                OWNER = {
+                    if = {
+                        limit = {
+                            has_dlc = "Waking the Tiger"
+                        }
+                    }
+                }
+            }
+
+             ai_will_do = {
+                factor = -1
+                modifier = {
+                    FROM = {
+                        has_war_support > 0.1
+                        command_power > 1.5
+                    }
+                    check_variable = { num_units_offensive_combats > 6 }
+
+                    set_temp_variable = { temp = avg_offensive_combat_status }
+                    check_variable = { temp > 0.45 }
+                    check_variable = { ai_random > temp }
+
+                    add = 2
+                }
+            }
+
+            cost = 0.22
+            duration = 168
+
+            one_time_effect = {
+                OWNER = {
+                    add_to_variable = {
+                        hercules = 1
+                    }
+                }
+                add_temporary_buff_to_units = {
+                    combat_offense = 0.2
+                    combat_defense = 0.2
+                    combat_breakthrough = 0.25
+                    str_damage_multiplier = -0.20
+
+
+                    days = 7
+                    tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
+                }
+            }
+        }
+    	use_kill_sat = {
+		name = ABILITY_USE_KILL_SAT
+		desc = ABILITY_USE_KILL_SAT_DESC
+
+		sound_effect = use_psycho
+
+		type = army_leader
+		cost = 0.30
+		allowed = {
+			NOT = { has_trait = exhausted_order_trait}
+			is_leading_army_group = no
+			OWNER = {
+				has_country_flag = nevada_kill_sat
+				NOT = { has_idea = erb_kill_sat_cooldown }
+			}
+		}
+		duration = 168
+
+		one_time_effect = {
+			add_timed_unit_leader_trait = {
+				trait = exhausted_order_trait
+				days = 20
+			}
+			add_temporary_buff_to_units = {
+				combat_offense = 0.8
+				combat_breakthrough = 0.8
+				org_damage_multiplier = -1.0
+				str_damage_multiplier = -0.30
+				cannot_retreat_while_attacking = 1.0
+
+				days = 7
+				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
+			}
+			OWNER = {
+				add_timed_idea = {
+					idea = erb_kill_sat_cooldown
+					days = 60
+				}
+			}
+		}
+
+
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				check_variable = { num_units_defensive_combats > 6 }
+
+				set_temp_variable = { temp = avg_defensive_combat_status }
+				check_variable = { temp < 0.40 }
+				check_variable = { ai_random > temp }
+
+				add = 2
+			}
+		}
+	}
+    }
