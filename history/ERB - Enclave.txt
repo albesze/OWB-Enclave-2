@@ -2,7 +2,7 @@
 
 set_war_support = 0.20
 set_stability = 0.35
-oob = "ERB_2265"
+oob = "ERB_2275"
 ###############################
 # TECHNOLOGY
 ###############################
@@ -135,7 +135,7 @@ set_party_name = { ideology = ruler long_name = ERB_ruler_party name = ERB_ruler
 set_party_name = { ideology = people long_name = ERB_people_party name = ERB_people_party_long }
 
 set_politics = {
-	ruling_party = ruler
+	ruling_party = intellectuals
 	elections_allowed = no
 }
 
@@ -272,7 +272,7 @@ add_ideas = {
 add_manpower = 500
 
 # 4th of july
-country_event = { id = enc_reformers.23 days = 25 }
+# country_event = { id = enc_reformers.23 days = 25 }
 
  set_variable = {
 	var = enc_rebels_we_have_armed
