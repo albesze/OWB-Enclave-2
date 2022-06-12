@@ -1241,9 +1241,9 @@
             idea_token = enc_allgood_murphy
 			allowed = { original_tag = ERB }
 			visible = { has_country_flag = enc_accepted_ncr_leaders }
-			available = {
-				has_full_control_of_state = 350
-			}
+			#available = {
+			#	has_full_control_of_state = 350
+			#}
 			traits = { peaceful_foreman }
 			ai_will_do = {
 				factor = 10

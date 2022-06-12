@@ -1,0 +1,277 @@
+on_actions = {
+	# During justifying wargoals
+	# triggered daily, so make sure there is a sink somewhere not firing events
+	# country, FROM = target nation
+	on_justifying_wargoal_pulse = {
+		random_events = {
+
+		}
+	}
+
+	on_wargoal_expire = {
+		effect = {
+
+		}
+	}
+
+	# country random events
+	#on_bi_yearly_pulse = {
+	#
+	#}
+
+	#on_five_year_pulse = {
+	#
+	#}
+
+	on_border_war_lost = {
+		effect = {
+
+		}
+	}
+
+	on_leave_faction = {
+		effect = {
+
+		}
+	}
+
+	#FROM is the one that joins the faction
+	on_create_faction = {
+		effect = {
+
+		}
+	}
+
+	#FROM is country getting invited.
+	on_offer_join_faction = {
+		effect = {
+
+		}
+	}
+
+	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
+	on_join_faction = {
+		effect = {
+
+		}
+	}
+
+	#FROM is war target
+	on_declare_war = {
+		effect = {
+			if = { # ERB declared war, LLW auto joins
+				limit = {
+					original_tag = ERB
+				}
+				LLW = {
+					declare_war_on = {
+						target = FROM
+						type = annex_everything
+					}
+				}
+			}
+			if = { # ERB declared war ON, LLW auto joins
+				limit = {
+					FROM = { original_tag = ERB }
+				}
+				declare_war_on = {
+					target = LLW
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	# When a new faction is formed
+	on_faction_formed = {
+		effect = {
+
+		}
+	}
+
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation  = {
+	}
+
+	# ROOT is previously capitulated country
+	on_uncapitulation = {
+		effect = {
+
+		}
+	}
+
+	on_government_change = {
+		effect = {
+
+		}
+	}
+
+	on_coup_succeeded = {
+		effect = {
+
+		}
+	}
+
+	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+	on_civil_war_end = {
+		effect = {
+		}
+	}
+
+	#used when puppeting in a peace conference
+	#ROOT = nation being puppeted, FROM = overlord
+
+	on_puppet = {
+
+	}
+
+	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
+	#ROOT = nation being released, FROM = overlord
+
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = ERB
+						NOT = { has_completed_focus = enc_reform }
+					}
+				}
+				ERB = {
+					annex_country = { target = PREV }
+				}
+			}
+		}
+	}
+
+	on_subject_annexed = {
+		effect = {
+
+		}
+	}
+
+	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
+	on_annex = {
+		# if = {
+			# limit = {
+				# original_tag = ERB
+			# }
+			# every_owned_state = {
+				# limit = {
+					# NOT = {
+						# is_core_of = ERB
+					# }
+				# }
+				# LLW = {
+					# transfer_state = PREV
+				# }
+			# }
+		# }
+	}
+
+	# ROOT is the winner, FROM is the loser.
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { original_tag = NEW }
+					ROOT = {
+						original_tag = ERB
+						has_completed_focus = enc_purity
+				 	}
+				}
+				country_event = { id = enc.47 }
+			}
+		}
+	}
+
+
+	#Not run on a specific country.
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+					not = {
+						original_tag = ERB
+					}
+				}
+				country_event = { id = enc.6 }
+			}
+		}
+	}
+
+	on_unit_leader_created = {
+		effect = {
+		}
+	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ERB
+					}
+					original_tag = ERB
+				}
+				calculate_hiding_cost = yes
+				if = {
+					limit = {
+						has_completed_focus = enc_reform
+					}
+					advanced_update_legitimacy = yes
+					else = {
+						LLW = {
+							if = {
+								limit = {
+									num_of_controlled_states < 1
+								}
+								# country_event = { id = enc_pur_llw.1 }
+								add_to_war = {
+									targeted_alliance = ERB
+									enemy = FROM
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_unit_leader_level_up = {
+		effect = {
+
+		}
+	}
+
+	# From is owner country
+	on_army_leader_daily = {
+		effect = {
+
+		}
+	}
+
+	# From is owner country
+	on_army_leader_won_combat = {
+		effect = {
+
+		}
+	}
+
+	# From is owner country
+	on_army_leader_lost_combat = {
+		effect = {
+
+		}
+	}
+
+
+	on_army_leader_promoted = {
+		effect = {
+
+		}
+	}
+}

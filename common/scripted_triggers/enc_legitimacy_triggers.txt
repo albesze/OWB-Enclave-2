@@ -1,0 +1,46 @@
+has_more_legitimacy = {
+
+	custom_trigger_tooltip = {
+		tooltip = has_legitimacy_tt
+		check_variable = {
+			var = enc_legitimacy
+			value > legitimacy_check_var
+		}
+	}
+}
+
+has_free_press = {
+	OR = {
+		has_idea = ENC_free_press
+		has_idea = ENC_free_press_2
+	}
+}
+
+has_no_free_press = {
+	NOT = {
+		OR = {
+			has_idea = ENC_free_press
+			has_idea = ENC_free_press_2
+		}
+	}
+}
+
+congress_accepts_nuke = {
+	has_war_with = CES
+	has_country_flag = enc_nukes_unarmed
+	NOT = {has_country_flag = enc_nuke_arming }
+	surrender_progress > 0.3
+}
+
+leader_has_red_scare = {
+	OR = {
+		has_country_leader_with_trait = red_scare
+		has_country_leader_with_trait = red_scare2
+	}
+}
+
+# set_temp_variable = {
+	# var = legitimacy_check_var
+	# value = 100
+# }
+# has_more_legitimacy = YES

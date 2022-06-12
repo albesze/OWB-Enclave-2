@@ -269,28 +269,28 @@ ideas = {
                 custom_modifier_tooltip = SPR_military_disloyalty_tt
 			}
 		}
-		enc_protected_by_bunker = {
-			picture = enc_protected_by_bunker
-			allowed = {
-				always = no
-			}			
-			cancel = {
-				and = {
-					159 = { # sierra army depot
-						is_capital = no
-						is_controlled_by = ROOT
-					}
-					has_war = no
-				}
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-			   surrender_limit = 1
-			}
-		}
+		#enc_protected_by_bunker = {
+		#	picture = enc_protected_by_bunker
+		#	allowed = {
+		#		always = no
+		#	}			
+		#	cancel = {
+		#		and = {
+		#			159 = { # sierra army depot
+		#				is_capital = no
+		#				is_controlled_by = ROOT
+		#			}
+		#			has_war = no
+		#		}
+		#	}
+		#	allowed_civil_war = {
+		#		always = no
+		#	}
+		#	removal_cost = -1
+		#	modifier = {
+		#	   surrender_limit = 1
+		#	}
+		#}
 ####################################################
 # REFORM
 ####################################################
